@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="0Yi-pl-jcA">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15509"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Cairo-Regular.ttf">
+            <string>Cairo-Regular</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--Side Menu Navigation Controller-->
+        <scene sceneID="C8b-vE-RYk">
+            <objects>
+                <navigationController storyboardIdentifier="SideMenu" wantsFullScreenLayout="YES" navigationBarHidden="YES" id="0Yi-pl-jcA" customClass="SideMenuNavigationController" customModule="SideMenu" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="Kvf-IP-bNm">
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="boolean" keyPath="leftSide" value="NO"/>
+                        <userDefinedRuntimeAttribute type="boolean" keyPath="alwaysAnimate" value="YES"/>
+                        <userDefinedRuntimeAttribute type="number" keyPath="initialSpringVelocity">
+                            <real key="value" value="0.5"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                    <connections>
+                        <segue destination="9Pe-Al-Ni1" kind="relationship" relationship="rootViewController" id="Wwc-G9-oXl"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="U5J-GB-PGq" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-447" y="93"/>
+        </scene>
+        <!--Side Menu View Controller-->
+        <scene sceneID="2kU-zL-NHo">
+            <objects>
+                <viewController id="9Pe-Al-Ni1" customClass="SideMenuViewController" customModule="AutoMarket" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="IWw-nb-aIK">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fHP-RU-yZd">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="152"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="auto_logo" translatesAutoresizingMaskIntoConstraints="NO" id="XRi-5r-dFu">
+                                        <rect key="frame" x="263" y="24" width="80" height="56"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="56" id="bPj-Qb-4zN"/>
+                                            <constraint firstAttribute="width" constant="80" id="ssb-51-30U"/>
+                                        </constraints>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="مرحبا بك" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="93G-9q-YrC">
+                                        <rect key="frame" x="293" y="94" width="50" height="23"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="50" id="cOb-ul-iHi"/>
+                                            <constraint firstAttribute="height" constant="23" id="czg-7i-bHr"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="Cairo-Regular" family="Cairo" pointSize="12"/>
+                                        <color key="textColor" red="0.86274509799999999" green="0.30588235289999999" blue="0.25490196079999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="اسم المستخدم" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VX3-kv-hEh">
+                                        <rect key="frame" x="243" y="117" width="100" height="26"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="100" id="cst-8u-Zwd"/>
+                                            <constraint firstAttribute="height" constant="26" id="vLa-rI-Znj"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="Cairo-Regular" family="Cairo" pointSize="14"/>
+                                        <color key="textColor" red="0.14901960780000001" green="0.1333333333" blue="0.38431372549999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="93G-9q-YrC" secondAttribute="trailing" constant="32" id="1fJ-iz-bc6"/>
+                                    <constraint firstItem="VX3-kv-hEh" firstAttribute="top" secondItem="93G-9q-YrC" secondAttribute="bottom" id="4DV-yx-Y7n"/>
+                                    <constraint firstAttribute="height" constant="152" id="Dgi-CS-q7X"/>
+                                    <constraint firstAttribute="trailing" secondItem="XRi-5r-dFu" secondAttribute="trailing" constant="32" id="IFP-KZ-IUT"/>
+                                    <constraint firstItem="VX3-kv-hEh" firstAttribute="trailing" secondItem="93G-9q-YrC" secondAttribute="trailing" id="J3q-7a-BFv"/>
+                                    <constraint firstItem="XRi-5r-dFu" firstAttribute="top" secondItem="fHP-RU-yZd" secondAttribute="top" constant="24" id="QG8-ch-OzS"/>
+                                    <constraint firstItem="93G-9q-YrC" firstAttribute="top" secondItem="XRi-5r-dFu" secondAttribute="bottom" constant="14" id="nZc-eF-TeU"/>
+                                </constraints>
+                            </view>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" scrollEnabled="NO" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="YQx-wY-wbX">
+                                <rect key="frame" x="0.0" y="152" width="375" height="515"/>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="fHP-RU-yZd" secondAttribute="trailing" id="5BP-oJ-xE4"/>
+                            <constraint firstAttribute="bottom" secondItem="YQx-wY-wbX" secondAttribute="bottom" id="5xB-hQ-ZFp"/>
+                            <constraint firstItem="fHP-RU-yZd" firstAttribute="leading" secondItem="IWw-nb-aIK" secondAttribute="leading" id="6VU-YY-SCd"/>
+                            <constraint firstItem="fHP-RU-yZd" firstAttribute="top" secondItem="512-OZ-3RV" secondAttribute="top" id="E8w-Io-JXI"/>
+                            <constraint firstItem="YQx-wY-wbX" firstAttribute="leading" secondItem="IWw-nb-aIK" secondAttribute="leading" id="OGq-r2-dwY"/>
+                            <constraint firstAttribute="trailing" secondItem="YQx-wY-wbX" secondAttribute="trailing" id="Tpw-lE-c2w"/>
+                            <constraint firstItem="YQx-wY-wbX" firstAttribute="top" secondItem="fHP-RU-yZd" secondAttribute="bottom" id="kji-sS-OoU"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="512-OZ-3RV"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="fcM-0Z-q7c"/>
+                    <connections>
+                        <outlet property="MenuTable" destination="YQx-wY-wbX" id="MrK-ge-N4F"/>
+                        <outlet property="User_Name" destination="VX3-kv-hEh" id="SlP-y8-UUc"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="leX-H9-YjM" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="613.60000000000002" y="92.203898050974516"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="auto_logo" width="148" height="100"/>
+    </resources>
+</document>

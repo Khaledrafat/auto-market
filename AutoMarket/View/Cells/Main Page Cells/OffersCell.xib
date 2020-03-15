@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15509"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Cairo-Regular.ttf">
+            <string>Cairo-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="OffersCell" id="gTV-IL-0wX" customClass="OffersCell" customModule="AutoMarket" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="218" height="188"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="218" height="188"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8HZ-pJ-bK3">
+                        <rect key="frame" x="0.0" y="0.0" width="218" height="188"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="2" translatesAutoresizingMaskIntoConstraints="NO" id="J27-BJ-G5R">
+                                <rect key="frame" x="0.0" y="0.0" width="218" height="188"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="هناك حقيقة مثبتة منذ المحتوى المقروء لصف" textAlignment="right" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RX0-7k-KPp">
+                                <rect key="frame" x="12" y="135" width="194" height="45"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="45" id="jRG-ux-xmM"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Cairo-Regular" family="Cairo" pointSize="12"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="J27-BJ-G5R" secondAttribute="bottom" id="Clv-bc-JYZ"/>
+                            <constraint firstAttribute="trailing" secondItem="RX0-7k-KPp" secondAttribute="trailing" constant="12" id="DMH-Px-1Y6"/>
+                            <constraint firstAttribute="trailing" secondItem="J27-BJ-G5R" secondAttribute="trailing" id="GSC-ud-wJR"/>
+                            <constraint firstItem="J27-BJ-G5R" firstAttribute="leading" secondItem="8HZ-pJ-bK3" secondAttribute="leading" id="bw7-cg-NOv"/>
+                            <constraint firstAttribute="bottom" secondItem="RX0-7k-KPp" secondAttribute="bottom" constant="8" id="c5Y-1U-Nrt"/>
+                            <constraint firstItem="RX0-7k-KPp" firstAttribute="leading" secondItem="8HZ-pJ-bK3" secondAttribute="leading" constant="12" id="kGW-AW-M9l"/>
+                            <constraint firstItem="J27-BJ-G5R" firstAttribute="top" secondItem="8HZ-pJ-bK3" secondAttribute="top" id="wWP-ua-RV8"/>
+                        </constraints>
+                    </view>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="8HZ-pJ-bK3" secondAttribute="trailing" id="9G2-jr-3Ah"/>
+                <constraint firstItem="8HZ-pJ-bK3" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="Mr2-Ca-XBS"/>
+                <constraint firstAttribute="bottom" secondItem="8HZ-pJ-bK3" secondAttribute="bottom" id="eGL-Hy-98v"/>
+                <constraint firstItem="8HZ-pJ-bK3" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="zbs-8V-bur"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <size key="customSize" width="218" height="188"/>
+            <connections>
+                <outlet property="ImageView" destination="8HZ-pJ-bK3" id="lHT-6m-lsq"/>
+                <outlet property="OfferContent" destination="RX0-7k-KPp" id="dGX-ND-fkh"/>
+                <outlet property="Offers_Image" destination="J27-BJ-G5R" id="CjO-wj-RIY"/>
+            </connections>
+            <point key="canvasLocation" x="110.14492753623189" y="63.616071428571423"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="2" width="500" height="500"/>
+    </resources>
+</document>

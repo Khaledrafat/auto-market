@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15509"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Cairo-Bold.ttf">
+            <string>Cairo-Bold</string>
+        </array>
+        <array key="Cairo-SemiBold.ttf">
+            <string>Cairo-SemiBold</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="MainCell" id="gTV-IL-0wX" customClass="MainCell" customModule="AutoMarket" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="322" height="179"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="322" height="179"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="L22-mW-FqV">
+                        <rect key="frame" x="24" y="4" width="274" height="171"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="MCE-kB-Phd">
+                                <rect key="frame" x="0.0" y="0.0" width="274" height="171"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="افضل العروض سوف تجدها مع اوتو ماركت" textAlignment="right" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="baS-Gh-XTa">
+                                <rect key="frame" x="128" y="32" width="130" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="099-9v-WJJ"/>
+                                    <constraint firstAttribute="width" constant="130" id="xAx-0l-dDM"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Cairo-SemiBold" family="Cairo" pointSize="13"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ارض المعارض - مدينة نصر - باب 6" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oxR-lS-US7">
+                                <rect key="frame" x="108" y="144" width="150" height="19"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="150" id="7ZW-p9-hdE"/>
+                                    <constraint firstAttribute="height" constant="19" id="pNS-3S-YmL"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Cairo-Bold" family="Cairo" pointSize="10"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="8 نوفمبر 2019 - 1 ديسمبر 2019" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zHl-A5-jBD">
+                                <rect key="frame" x="108" y="121" width="150" height="19"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="150" id="1Gj-gl-NeJ"/>
+                                    <constraint firstAttribute="height" constant="19" id="8Ug-Ac-uNU"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Cairo-Bold" family="Cairo" pointSize="10"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="oxR-lS-US7" firstAttribute="top" secondItem="zHl-A5-jBD" secondAttribute="bottom" constant="4" id="5oj-hD-F1f"/>
+                            <constraint firstItem="MCE-kB-Phd" firstAttribute="leading" secondItem="L22-mW-FqV" secondAttribute="leading" id="AKY-NE-29Z"/>
+                            <constraint firstAttribute="trailing" secondItem="MCE-kB-Phd" secondAttribute="trailing" id="Hmb-Ns-Svr"/>
+                            <constraint firstItem="baS-Gh-XTa" firstAttribute="top" secondItem="L22-mW-FqV" secondAttribute="top" constant="32" id="K4p-ft-knP"/>
+                            <constraint firstAttribute="trailing" secondItem="zHl-A5-jBD" secondAttribute="trailing" constant="16" id="PZp-0a-gC1"/>
+                            <constraint firstItem="oxR-lS-US7" firstAttribute="trailing" secondItem="baS-Gh-XTa" secondAttribute="trailing" id="hoT-Wp-yw6"/>
+                            <constraint firstItem="MCE-kB-Phd" firstAttribute="top" secondItem="L22-mW-FqV" secondAttribute="top" id="k1G-tN-DJH"/>
+                            <constraint firstAttribute="bottom" secondItem="oxR-lS-US7" secondAttribute="bottom" constant="8" id="mfh-o9-DVg"/>
+                            <constraint firstAttribute="bottom" secondItem="MCE-kB-Phd" secondAttribute="bottom" id="qFz-vC-kox"/>
+                            <constraint firstAttribute="trailing" secondItem="baS-Gh-XTa" secondAttribute="trailing" constant="16" id="sIk-et-54F"/>
+                        </constraints>
+                    </view>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="L22-mW-FqV" secondAttribute="bottom" constant="4" id="0GJ-e8-e2a"/>
+                <constraint firstItem="L22-mW-FqV" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="24" id="D4l-4d-d2R"/>
+                <constraint firstAttribute="trailing" secondItem="L22-mW-FqV" secondAttribute="trailing" constant="24" id="F3V-ts-tMp"/>
+                <constraint firstItem="L22-mW-FqV" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="4" id="iKK-uY-e8A"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <size key="customSize" width="322" height="179"/>
+            <connections>
+                <outlet property="ImageView" destination="L22-mW-FqV" id="8zE-on-Tba"/>
+                <outlet property="ItemImage" destination="MCE-kB-Phd" id="7ml-Il-Afk"/>
+            </connections>
+            <point key="canvasLocation" x="-11.594202898550726" y="66.629464285714278"/>
+        </collectionViewCell>
+    </objects>
+</document>

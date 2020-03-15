@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15509"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Cairo-SemiBold.ttf">
+            <string>Cairo-SemiBold</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="QuestionsCell" id="gTV-IL-0wX" customClass="QuestionsCell" customModule="AutoMarket" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="262" height="165"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="262" height="165"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Bpn-HN-5OI">
+                        <rect key="frame" x="12" y="12" width="238" height="141"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1/10" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mBf-ez-cFf">
+                                <rect key="frame" x="187" y="12" width="34" height="23"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="34" id="Ejj-ja-WBC"/>
+                                    <constraint firstAttribute="height" constant="23" id="Kpy-xg-ZPv"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Cairo-SemiBold" family="Cairo" pointSize="12"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="هناك حقيقة مثبتة منذ زمن طويل وهي أن المحتوى المقروء لصفحة ؟" textAlignment="right" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="cKh-cn-AKl">
+                                <rect key="frame" x="17" y="47" width="204" height="50"/>
+                                <fontDescription key="fontDescription" name="Cairo-SemiBold" family="Cairo" pointSize="13"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fPG-3D-ycK">
+                                <rect key="frame" x="32" y="101" width="30" height="24"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="24" id="9b8-0e-GhQ"/>
+                                    <constraint firstAttribute="width" constant="30" id="OsJ-Bf-Kf6"/>
+                                </constraints>
+                                <state key="normal" title="نعم">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="ButtonClicked:" destination="gTV-IL-0wX" eventType="touchUpInside" id="cql-uP-icb"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mI4-lK-OiB">
+                                <rect key="frame" x="92" y="101" width="30" height="24"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="24" id="cs2-ni-fSE"/>
+                                    <constraint firstAttribute="width" constant="30" id="hCv-G1-Khx"/>
+                                </constraints>
+                                <state key="normal" title="لا">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="ButtonClicked:" destination="gTV-IL-0wX" eventType="touchUpInside" id="dHo-Nk-hXs"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBlueColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="mI4-lK-OiB" firstAttribute="leading" secondItem="fPG-3D-ycK" secondAttribute="trailing" constant="30" id="1Hm-ex-HQk"/>
+                            <constraint firstItem="cKh-cn-AKl" firstAttribute="leading" secondItem="Bpn-HN-5OI" secondAttribute="leading" constant="17" id="AcL-ql-mp7"/>
+                            <constraint firstAttribute="trailing" secondItem="mBf-ez-cFf" secondAttribute="trailing" constant="17" id="Ehx-pg-MFT"/>
+                            <constraint firstItem="fPG-3D-ycK" firstAttribute="leading" secondItem="Bpn-HN-5OI" secondAttribute="leading" constant="32" id="QO9-3G-cGk"/>
+                            <constraint firstItem="cKh-cn-AKl" firstAttribute="top" secondItem="mBf-ez-cFf" secondAttribute="bottom" constant="12" id="TRB-Pd-QOs"/>
+                            <constraint firstAttribute="trailing" secondItem="cKh-cn-AKl" secondAttribute="trailing" constant="17" id="W5e-gG-YiI"/>
+                            <constraint firstItem="fPG-3D-ycK" firstAttribute="top" secondItem="cKh-cn-AKl" secondAttribute="bottom" constant="4" id="dFz-lx-2zg"/>
+                            <constraint firstItem="mBf-ez-cFf" firstAttribute="top" secondItem="Bpn-HN-5OI" secondAttribute="top" constant="12" id="tLr-8f-uQa"/>
+                            <constraint firstAttribute="bottom" secondItem="fPG-3D-ycK" secondAttribute="bottom" constant="16" id="wBw-c3-F9e"/>
+                            <constraint firstAttribute="bottom" secondItem="mI4-lK-OiB" secondAttribute="bottom" constant="16" id="yqS-7s-SiG"/>
+                        </constraints>
+                    </view>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstItem="Bpn-HN-5OI" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="12" id="Swb-Mu-93s"/>
+                <constraint firstAttribute="bottom" secondItem="Bpn-HN-5OI" secondAttribute="bottom" constant="12" id="Y8w-TG-TCh"/>
+                <constraint firstAttribute="trailing" secondItem="Bpn-HN-5OI" secondAttribute="trailing" constant="12" id="cRg-Hn-3of"/>
+                <constraint firstItem="Bpn-HN-5OI" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="12" id="wlY-1l-ubZ"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <size key="customSize" width="262" height="165"/>
+            <connections>
+                <outlet property="NumbersLabel" destination="mBf-ez-cFf" id="APl-dw-AmI"/>
+                <outlet property="QuestionLabel" destination="cKh-cn-AKl" id="dsd-pu-D7E"/>
+                <outlet property="QuestionsView" destination="Bpn-HN-5OI" id="3a4-TF-2Rh"/>
+            </connections>
+            <point key="canvasLocation" x="-63.768115942028992" y="102.12053571428571"/>
+        </collectionViewCell>
+    </objects>
+</document>

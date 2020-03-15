@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15509"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Cairo-SemiBold.ttf">
+            <string>Cairo-SemiBold</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="SponserCell" id="gTV-IL-0wX" customClass="SponsersCollectionViewCell" customModule="AutoMarket" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="148" height="142"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="148" height="142"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3y5-gn-g93" userLabel="Main View">
+                        <rect key="frame" x="4" y="4" width="140" height="134"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="08W-Fx-iHK">
+                                <rect key="frame" x="0.0" y="0.0" width="140" height="100"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="100" id="BWS-sQ-Yre"/>
+                                </constraints>
+                            </imageView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5N2-cf-rqt">
+                                <rect key="frame" x="0.0" y="100" width="140" height="34"/>
+                                <subviews>
+                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jTC-xl-29X">
+                                        <rect key="frame" x="0.0" y="0.0" width="140" height="34"/>
+                                        <fontDescription key="fontDescription" name="Cairo-SemiBold" family="Cairo" pointSize="12"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemRedColor" red="1" green="0.23137254900000001" blue="0.18823529410000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstItem="jTC-xl-29X" firstAttribute="centerX" secondItem="5N2-cf-rqt" secondAttribute="centerX" id="4I5-t5-ElD"/>
+                                    <constraint firstItem="jTC-xl-29X" firstAttribute="top" secondItem="5N2-cf-rqt" secondAttribute="top" id="G0I-Ib-CTc"/>
+                                    <constraint firstAttribute="bottom" secondItem="jTC-xl-29X" secondAttribute="bottom" id="Jja-hQ-yjc"/>
+                                    <constraint firstItem="jTC-xl-29X" firstAttribute="centerY" secondItem="5N2-cf-rqt" secondAttribute="centerY" id="Sql-L1-fee"/>
+                                    <constraint firstItem="jTC-xl-29X" firstAttribute="leading" secondItem="5N2-cf-rqt" secondAttribute="leading" id="ply-lC-OOz"/>
+                                    <constraint firstAttribute="trailing" secondItem="jTC-xl-29X" secondAttribute="trailing" id="tOY-24-Cex"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="5N2-cf-rqt" firstAttribute="leading" secondItem="3y5-gn-g93" secondAttribute="leading" id="1wr-Aj-iNA"/>
+                            <constraint firstAttribute="trailing" secondItem="5N2-cf-rqt" secondAttribute="trailing" id="Phr-0O-EaQ"/>
+                            <constraint firstItem="5N2-cf-rqt" firstAttribute="top" secondItem="08W-Fx-iHK" secondAttribute="bottom" id="Qt8-AB-Mf5"/>
+                            <constraint firstAttribute="trailing" secondItem="08W-Fx-iHK" secondAttribute="trailing" id="SPr-Yd-Njw"/>
+                            <constraint firstItem="08W-Fx-iHK" firstAttribute="leading" secondItem="3y5-gn-g93" secondAttribute="leading" id="dmD-Ge-sQ3"/>
+                            <constraint firstAttribute="bottom" secondItem="5N2-cf-rqt" secondAttribute="bottom" id="fla-gw-fnQ"/>
+                            <constraint firstItem="08W-Fx-iHK" firstAttribute="top" secondItem="3y5-gn-g93" secondAttribute="top" id="uCQ-Kn-jfe"/>
+                        </constraints>
+                    </view>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstItem="3y5-gn-g93" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="4" id="7Mc-8C-xbm"/>
+                <constraint firstAttribute="trailing" secondItem="3y5-gn-g93" secondAttribute="trailing" constant="4" id="EjQ-15-JSg"/>
+                <constraint firstAttribute="bottom" secondItem="3y5-gn-g93" secondAttribute="bottom" constant="4" id="cDb-Da-SML"/>
+                <constraint firstItem="3y5-gn-g93" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="4" id="xE4-XT-qEF"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <size key="customSize" width="148" height="142"/>
+            <connections>
+                <outlet property="LabelView" destination="5N2-cf-rqt" id="2ob-QB-qEf"/>
+                <outlet property="MainView" destination="3y5-gn-g93" id="iTB-QS-ayl"/>
+                <outlet property="SponserImage" destination="08W-Fx-iHK" id="kIl-gQ-dxD"/>
+                <outlet property="SponserLabel" destination="jTC-xl-29X" id="VIV-uZ-aWR"/>
+            </connections>
+            <point key="canvasLocation" x="66.666666666666671" y="80.357142857142847"/>
+        </collectionViewCell>
+    </objects>
+</document>
